@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Abastecimento</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário de Abastecimento</h1>
+
+    <div>
+        <label for="num_maquina">Número da máquina:</label>
+        <input type="text" id="num_maquina" placeholder="Digite o número da máquina">
+    </div>
+
+    <div>
+        <label for="nome_operador">Nome operador:</label>
+        <input type="text" id="nome_operador" placeholder="Digite o nome do operador">
+    </div>
+
+    <div>
+        <label for="data_abastecimento">Data do abastecimento:</label>
+        <input type="date" id="data_abastecimento">
+    </div>
+
+    <div>
+        <label for="litros_abastecidos">Litros abastecidos:</label>
+        <input type="number" id="litros_abastecidos" placeholder="Digite os litros abastecidos">
+    </div>
+
+    <button id="okButton">OK</button>
+    <p id="alertMessage" style="color: red; display: none;">Todos os campos são obrigatórios!</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
